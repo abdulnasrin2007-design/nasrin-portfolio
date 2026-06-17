@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Nasrin | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-img-ring">
+        <img src="profile.jpg" alt="Abdul Nasrin" class="preloader-img" />
+      </div>
+      <div class="preloader-text">
+        <p class="preloader-name" id="plName">Abdul Nasrin</p>
+        <p class="preloader-role" id="plRole">Aspiring Software Engineer</p>
+        <p class="preloader-quote" id="plQuote">Designing Experiences, Building Ideas</p>
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+      <span class="preloader-pct" id="preloaderPct">0%</span>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AN</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#skills"    class="nav-link">Skills</a></li>
+        <li><a href="#projects"  class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#connect"   class="nav-link">Connect</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-right">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Abdul Nasrin</h1>
+        <h2 class="hero-title">Aspiring Software Engineer &amp; Frontend Developer</h2>
+        <p class="hero-desc">Building modern, responsive,and user-focused digital experiences while learning,experimenting,and turing ideas into real projects.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <div class="social-icons">
+            <a href="https://github.com/abdulnasrin2007-design" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abdulnasrin"   target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:abdulnasrin2007@gmail.com"          class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap" data-aos="fade-left">
+        <div class="hero-image-circle" id="heroCircle">
+          <img src="profile.jpg" alt="Abdul Nasrin" class="hero-img" id="heroImg" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="about-card glass-card">
+          <p>I'm a Computer Science and Engineering student based in <strong>Vijayawada</strong>, passionate about building meaningful web experiences. I enjoy turning ideas into elegant, functional products that people love to use.</p>
+          <p>I enjoy turning ideas into real projects and exploring how technology can solve everyday problems. My journey began through curiosity, experimentation, and building hands-on projects using web technologies and modern development tools. Rather than limiting myself to one path early, I'm exploring different areas of software development, continuously learning by creating, improving, and testing new ideas.</p>
+          <p>Currently studying at Dhanekula Institute of Engineering and Technology (2024–2028), building a strong foundation in computer science while working on real-world projects that challenge and inspire me.</p>
+          <p>When I'm not coding, I'm exploring new design patterns, experimenting with UI concepts, and learning the latest tools in the web ecosystem. I'm always open to collaboration, internship opportunities, and discovering better ways to turn concepts into meaningful digital experiences.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card glass-card" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-code"></i><h3>7+</h3><p>Projects Built</p></div>
+          <div class="stat-card glass-card" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-layer-group"></i><h3>12+</h3><p>Technologies</p></div>
+          <div class="stat-card glass-card" data-aos="fade-up" data-aos-delay="250"><i class="fas fa-graduation-cap"></i><h3>2028</h3><p>Graduating</p></div>
+          <div class="stat-card glass-card" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-map-marker-alt"></i><h3>VJA</h3><p>Vijayawada, IN</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Work With</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <!-- Frontend -->
+      <p class="skills-category-label" data-aos="fade-up" data-aos-delay="30">Frontend</p>
+      <div class="skills-grid" style="margin-bottom:2rem;">
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="50">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon" />
+          <p class="skill-card-name">HTML</p>
+          <p class="skill-card-desc">Semantic, accessible markup that forms the backbone of every web page.</p>
+        </div>
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon" />
+          <p class="skill-card-name">CSS</p>
+          <p class="skill-card-desc">Responsive layouts, animations, and polished glassmorphism visual styles.</p>
+        </div>
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="150">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon" />
+          <p class="skill-card-name">JavaScript</p>
+          <p class="skill-card-desc">Interactive, dynamic web experiences with clean vanilla JavaScript.</p>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <p class="skills-category-label" data-aos="fade-up" data-aos-delay="30">Backend</p>
+      <div class="skills-grid" style="margin-bottom:2rem;">
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="50">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="skill-icon" />
+          <p class="skill-card-name">Node.js</p>
+          <p class="skill-card-desc">Server-side JavaScript runtime for building scalable backend services.</p>
+        </div>
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" class="skill-icon skill-icon-github" />
+          <p class="skill-card-name">Express.js</p>
+          <p class="skill-card-desc">Fast, minimal Node.js framework for building REST APIs and web servers.</p>
+        </div>
+        <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="150">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-card-img" style="width: 64px; height: 64px; margin-bottom: 15px;">
+    <p class="skill-card-name">Python</p>
+    <p class="skill-card-desc">Versatile programming language for backend logic, automation, and data processing.</p>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="project-badge badge-web">Web App</div>
+          <h3 class="project-title">AI Resume Analyzer</h3>
+          <p class="project-desc">An AI-powered web application that analyzes uploaded resumes and provides detailed feedback on formatting, content quality, and keyword optimization. It helps job seekers improve their resumes to better match industry standards and specific job requirements using intelligent text analysis.</p>
+          <div class="project-links">
+            <a href="https://resume-analyzer-dun-seven.vercel.app/" target="_blank" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+            <a href="https://github.com/abdulnasrin2007-design/resume-analyzer" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-badge badge-web">Web App</div>
+          <h3 class="project-title">Music Player</h3>
+          <p class="project-desc">A sleek, browser-based music player built with modern frontend technologies. Features include playlist management, track navigation, progress control, and a polished audio visualization UI. Designed with a focus on smooth animations and an intuitive listening experience for everyday use.</p>
+          <div class="project-links">
+            <a href="https://code-alpha-music-player-ecru-delta.vercel.app/" target="_blank" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+            <a href="https://github.com/abdulnasrin2007-design/CodeAlpha_MusicPlayer" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-badge badge-web">Web App</div>
+          <h3 class="project-title">Image Gallery</h3>
+          <p class="project-desc">A responsive image gallery application that presents photographs in a clean, organised grid layout. Features smooth hover effects, lightbox preview, and optimised image loading for a premium browsing experience. Built to demonstrate dynamic rendering and thoughtful visual presentation on all screen sizes.</p>
+          <div class="project-links">
+            <a href="https://code-alpha-gallery-image-jrol.vercel.app/" target="_blank" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+            <a href="https://github.com/abdulnasrin2007-design/CodeAlpha-GalleryImage" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-badge badge-3d">3D / Visual</div>
+          <h3 class="project-title">3D Shapes</h3>
+          <p class="project-desc">An interactive 3D shape visualization tool that renders geometric forms in the browser using CSS and JavaScript. Users can explore different shapes, rotate perspectives, and observe real-time 3D transformations. A creative experiment in spatial rendering without any external 3D libraries.</p>
+          <div class="project-links">
+            <a href="https://3d-shapes-fawn.vercel.app/" target="_blank" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+            <a href="https://github.com/abdulnasrin2007-design/3d-shapes" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-badge badge-web">Web App</div>
+          <h3 class="project-title">Job Search Website</h3>
+          <p class="project-desc">A responsive job search platform that allows users to browse and filter job listings by category, location, and role type. Built with a clean, professional design to make the job-hunting process more accessible and organised. Demonstrates dynamic filtering and UI responsiveness across devices.</p>
+          <div class="project-links">
+            <a href="https://jobsearchwebsite-six.vercel.app/" target="_blank" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+            <a href="https://github.com/abdulnasrin2007-design/jobsearchwebsite" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-badge badge-web">Web App</div>
+          <h3 class="project-title">Code Quest</h3>
+          <p class="project-desc">An interactive coding challenge platform designed to help learners practice and sharpen their programming skills through structured quests. Features problem sets of varying difficulty, real-time feedback, and an engaging interface that makes learning to code feel like an adventure rather than a chore.</p>
+          <div class="project-links">
+            <a href="https://nasrinapp.vercel.app/" target="_blank" class="btn-outline btn-sm"><i class="fas fa-external-link-alt"></i> View Project</a>
+            <a href="https://github.com/abdulnasrin2007-design/Nasrinapp" target="_blank" class="btn-ghost btn-sm"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="project-badge badge-python">Python</div>
+          <h3 class="project-title">Roboto – Python Chatbot</h3>
+          <p class="project-desc">A Python-based chatbot project focused on conversation flow, interaction handling, and practical problem solving. Roboto explores natural language patterns and response generation to simulate meaningful user interactions. Being refined with improved logic and extended dialogue capabilities.</p>
+          <div class="project-links">
+            <a href="https://github.com/abdulnasrin2007-design" target="_blank" class="btn-outline btn-sm"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-card glass-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <div class="edu-info">
+          <span class="edu-year">2024 – 2028</span>
+          <h3 class="edu-degree">Bachelor of Technology</h3>
+          <p class="edu-field">Computer Science and Engineering</p>
+          <p class="edu-institute"><i class="fas fa-map-marker-alt"></i> Dhanekula Institute of Engineering and Technology, Ganguru</p>
+        </div>
+        <div class="edu-badge"><i class="fas fa-graduation-cap"></i> B.Tech</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONNECT ===== -->
+  <section class="section" id="connect">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Connect</h2>
+        <p class="section-sub">Have a project idea, opportunity, or just want to say hello? Send a message and I'll get back to you.</p>
+      </div>
+      <div class="connect-grid">
+        <div class="connect-info" data-aos="fade-right">
+          <div class="connect-item glass-card">
+            <i class="fab fa-github"></i>
+            <div><h4>GitHub</h4><a href="https://github.com/abdulnasrin2007-design" target="_blank">abdulnasrin2007-design</a></div>
+          </div>
+          <div class="connect-item glass-card">
+            <i class="fab fa-linkedin-in"></i>
+            <div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/abdulnasrin" target="_blank">abdulnasrin</a></div>
+          </div>
+          <div class="connect-item glass-card">
+            <i class="fas fa-envelope"></i>
+            <div><h4>Email</h4><span class="masked-email">Available via form →</span></div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="contactForm" data-aos="fade-left" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your full name" maxlength="80" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" maxlength="120" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-purpose">Purpose</label>
+            <select id="cf-purpose" name="purpose" required>
+              <option value="" disabled selected>Select a purpose</option>
+              <option value="Project Discussion">Project Discussion</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Internship Opportunity">Internship Opportunity</option>
+              <option value="General Message">General Message</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message <span class="char-counter" id="charCounter">0/500</span></label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="Write your message here..." maxlength="500" required></textarea>
+          </div>
+          <!-- Math Verification -->
+          <div class="form-group verify-group">
+            <label for="cf-verify">
+              Verification &nbsp;<span class="verify-question" id="verifyQuestion"></span>
+            </label>
+            <input type="number" id="cf-verify" name="verify" placeholder="Your answer" autocomplete="off" />
+            <span class="verify-hint" id="verifyHint"></span>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader" style="display:none"><i class="fas fa-spinner fa-spin"></i></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-social">
+      <a href="https://github.com/abdulnasrin2007-design" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/abdulnasrin"   target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:abdulnasrin2007@gmail.com"          class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Abdul Nasrin &bull; Portfolio &bull; All Rights Reserved</p>
+    <p class="footer-sub">Designing Experiences, Building Ideas</p>
+  </footer>
+
+  <!-- ===== SUCCESS POPUP ===== -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup glass-card">
+      <div class="popup-icon"><i class="fas fa-check-circle"></i></div>
+      <h3>Thank you for reaching out.</h3>
+      <p>Your message was sent successfully.</p>
+      <button class="btn-primary" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
