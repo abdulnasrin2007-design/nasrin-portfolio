@@ -4,7 +4,7 @@
    e.g. https://your-backend.onrender.com/send-message
    For local dev: http://localhost:3001/send-message
 =================================================== */
-const BACKEND_URL = 'http://localhost:3001/send-message';
+const BACKEND_URL = '/api/send-message';  // Change this to your backend URL when deployed
 
 /* ===================================================
    PRELOADER — 4-5 seconds, text reads comfortably
