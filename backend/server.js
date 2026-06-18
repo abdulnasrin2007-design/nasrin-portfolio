@@ -4,7 +4,6 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const app  = express();
-const PORT = process.env.PORT || 3001;
 
 // ── Middleware ──────────────────────────────────────────
 app.use(express.json());
@@ -17,8 +16,8 @@ app.use(cors({
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS,
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -26,8 +25,8 @@ function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-// ── POST /send-message ──────────────────────────────────
-app.post('/send-message', async (req, res) => {
+// ── POST /api/send-message ──────────────────────────────
+app.post('/api/send-message', async (req, res) => {
   const { name, email, purpose, message } = req.body;
 
   if (!name || !email || !purpose || !message)
@@ -43,8 +42,8 @@ app.post('/send-message', async (req, res) => {
     return res.status(400).json({ error: 'Message must be 10-500 characters.' });
 
   const mailOptions = {
-    from:    `"${name.trim()}" <${process.env.GMAIL_USER}>`,
-    to:      process.env.GMAIL_USER,
+    from:    `"${name.trim()}" <${process.env.EMAIL_USER}>`,
+    to:      process.env.EMAIL_USER,
     replyTo: email.trim(),
     subject: `Portfolio Contact | ${purpose} — from ${name.trim()}`,
     text: `Name: ${name.trim()}\nEmail: ${email.trim()}\nPurpose: ${purpose}\n\nMessage:\n${message.trim()}`,
@@ -83,9 +82,6 @@ app.post('/send-message', async (req, res) => {
   }
 });
 
-app.get('/health', (_req, res) => res.json({ status: 'ok' }));
+app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
 
-app.listen(PORT, () => {
-  console.log(`\n Backend running → http://localhost:${PORT}`);
-  console.log(` GMAIL_USER: ${process.env.GMAIL_USER || '(not set)'}\n`);
-});
+module.exports = app;
